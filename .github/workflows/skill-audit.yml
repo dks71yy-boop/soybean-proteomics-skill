@@ -1,0 +1,26 @@
+name: Skill audit
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Compile helper scripts
+        run: python -m py_compile scripts/*.py
+
+      - name: Run static skill audit
+        run: python scripts/audit_skill.py .
