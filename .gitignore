@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Local analysis outputs and scratch space
+work/
+outputs/
+results/
+soybean_proteomics_results/
+*.log
+
+# Archives / temporary bundles
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Secrets / local configuration
+.env
+.env.*
+*.pem
+*.key
