@@ -1,0 +1,7 @@
+interface:
+  display_name: "Soybean Proteomics"
+  short_description: "零本地安装，自动交付大豆蛋白质组下游分析"
+  default_prompt: "使用 $soybean-proteomics 只读检查我的大豆蛋白组输入与 metadata，先给出 INPUT AUDIT 和 ANALYSIS PLAN；经我确认后自动完成可靠的下游分析，并交付 XLSX、图件、中文报告、provenance 与运行时审计，不要求我在 Windows 主机安装分析环境。"
+
+policy:
+  allow_implicit_invocation: true
